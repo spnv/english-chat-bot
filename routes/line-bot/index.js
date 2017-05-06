@@ -26,8 +26,8 @@ var text = [];
 
 var fourMagic = new cron('00 35 07 * * *', function() {
         /*
-         * Runs everyday (Monday through Sunday)
-         * at 07:20:00 AM.
+         * Runs everyday
+         * at 07:35:00 AM.
          */
         word.getCreativeWord(4, function(data) {
             text = [];
@@ -45,8 +45,8 @@ var fourMagic = new cron('00 35 07 * * *', function() {
 
 var goodNight = new cron('00 02 07 * * 1-5', function() {
         /*
-         * Runs everyday (Monday through Sunday)
-         * at 07:20:00 AM.
+         * Runs every weekday (Monday through Sunday)
+         * at 07:02:00 AM.
          */
         text = [];
         text.push(robert.msgText("Morning, wake up :O"));
@@ -60,11 +60,11 @@ var goodNight = new cron('00 02 07 * * 1-5', function() {
 
 var goodNight = new cron('00 25 20 * * *', function() {
         /*
-         * Runs everyday (Monday through Sunday)
-         * at 07:20:00 AM.
+         * Runs everyday
+         * at 20:25:00 AM.
          */
         text = [];
-        text.push(robert.msgText("Nigth timee, going to sleep. before dat ..."));
+        text.push(robert.msgText("Night timee, going to sleep. before dat ..."));
         text.push(robert.msgText("How bout u 2day ?"));
         robert.pushMsg(define.SPNV_LINE_ID, text);
 
