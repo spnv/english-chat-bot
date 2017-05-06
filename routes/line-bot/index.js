@@ -14,7 +14,7 @@ var robert = new lineBot(define.CHANNELTOKEN, "Robert");
 
 /* GET home page. */
 router.post('/', function(req, res, next) {
-    res.render('index', { title: 'Express' });
+    res.render('index', { title: 'Express' , data : 'line'});
 });
 
 module.exports = router;
