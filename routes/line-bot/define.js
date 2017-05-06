@@ -1,0 +1,4 @@
+exports.CHANNELTOKEN = "dYpcyRvStLEEUmRVRyP6WeEM5qpNt/Q66OqrwiGFWjTePoDcQAz7Pj+LSVoSF/ozuCFRCmGiYqJf3vJRMPPEhWHKvDIIGoTJpuRoWn/cooet/a2FDkwxJJCN8U8+FlW1sfFPO5y6Ks33rc+ob1Q3qwdB04t89/1O/w1cDnyilFU=";
+exports.CHANNELSECRET = "e7592b2fde44dfc72f43c0fd34fc903e"; 
+exports.SPNV_LINE_ID = "U6ae693cdb14ba45799fe15d644febade";
+// exports.MONGODB_URL = "e7592b2fde44dfc72f43c0fd34fc903e"; 
