@@ -13,9 +13,13 @@ var define = require('./define.js');
 var robert = new lineBot(define.CHANNELTOKEN, "Robert");
 
 /* GET home page. */
-router.post('/', function(req, res, next) {
-    res.render('index', { title: 'Express' , data : 'line'});
-});
+router.route('/')
+    .get(function(req, res, next) {
+        res.render('index', { title: 'Express', data: 'line' });
+    })
+    .post(function(req, res, next) {
+        res.render('index', { title: 'Express', data: 'line' });
+    });
 
 module.exports = router;
 var text = [];
