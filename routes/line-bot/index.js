@@ -40,10 +40,11 @@ var fourMagic = new cron('00 35 07 * * *', function() {
     }, function() {
         /* This function is executed when the job stops */
     },
-    true
+    true,
+    'Asia/Bangkok'
 );
 
-var goodNight = new cron('00 02 07 * * 1-5', function() {
+var goodMorning = new cron('00 02 07 * * 1-5', function() {
         /*
          * Runs every weekday (Monday through Sunday)
          * at 07:02:00 AM.
@@ -55,7 +56,8 @@ var goodNight = new cron('00 02 07 * * 1-5', function() {
     }, function() {
         /* This function is executed when the job stops */
     },
-    true
+    true,
+    'Asia/Bangkok'
 );
 
 var goodNight = new cron('00 25 20 * * *', function() {
@@ -64,12 +66,31 @@ var goodNight = new cron('00 25 20 * * *', function() {
          * at 20:25:00 AM.
          */
         text = [];
-        text.push(robert.msgText("Night timee, going to sleep. before dat ..."));
-        text.push(robert.msgText("How bout u 2day ?"));
+        text.push(robert.msgText("do  u still there? sleep yet?"));
+        text.push(robert.msgText("what r u doing ?"));
         robert.pushMsg(define.SPNV_LINE_ID, text);
 
     }, function() {
         /* This function is executed when the job stops */
     },
-    true
+    true,
+    'Asia/Bangkok'
+);
+
+var afterWork = new cron('00 45 13 * * *', function() {
+        /*
+         * Runs everyday
+         * at 20:25:00 AM.
+         */
+        text = [];
+        text.push(robert.msgText("TIME IS UP !"));
+        text.push(robert.msgText("it's a LONGGGG day here X|"));
+        text.push(robert.msgText("how bout ur?"));
+        robert.pushMsg(define.SPNV_LINE_ID, text);
+
+    }, function() {
+        /* This function is executed when the job stops */
+    },
+    true,
+    'Asia/Bangkok'
 );
