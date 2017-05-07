@@ -77,7 +77,7 @@ var goodNight = new cron('00 25 20 * * *', function() {
     'Asia/Bangkok'
 );
 
-var afterWork = new cron('00 45 13 * * 1-5', function() {
+var afterWork = new cron('00 45 17 * * 1-5', function() {
         /*
          * Runs everyday
          * at 20:25:00 AM.
