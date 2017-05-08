@@ -18,7 +18,6 @@ router.route('/')
     //     res.render('index', { title: 'Express', data: 'line' });
     // })
     .post(function(req, res, next) {
-        console.log(req.cookies.userId);
         res.end();
     });
 

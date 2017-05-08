@@ -17,7 +17,7 @@ router.route('/')
             state: 'abc1412'
         }),
         function(req, res, next) {
-            res.render('index', { title: 'Robert' });
+            res.render('index', { title: req.cookies.userId });
         });
 
 module.exports = router;
