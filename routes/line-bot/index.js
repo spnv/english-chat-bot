@@ -10,7 +10,7 @@ var define = require('./define.js');
 // var dbUserManager = require('./modal/user-modal.js');
 // var dbParaManager = require('./modal/paragraph-modal.js')
 
-var robert = new lineBot(define.CHANNELTOKEN, "Robert");
+var robert = new lineBot(define.CHANNELTOKEN, "Rosie's mouse");
 
 /* GET home page. */
 router.route('/')
@@ -18,7 +18,7 @@ router.route('/')
     //     res.render('index', { title: 'Express', data: 'line' });
     // })
     .post(function(req, res, next) {
-        console.log("LINE !");
+        console.log(req.cookies.userId);
         res.end();
     });
 
