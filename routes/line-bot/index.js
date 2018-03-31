@@ -31,9 +31,9 @@ var fourMagic = new cron('00 35 07 * * *', function() {
          */
         word.getCreativeWord(4, function(data) {
             text = [];
-            text.push(robert.msgText("4 Magic time !"));
+            text.push(robert.msgText("4 Magic time"));
             text.push(robert.msgText(data.join(', ')));
-            text.push(robert.msgText("reply here, now or neverr ;p"));
+            text.push(robert.msgText("make sentences, Go !"));
             robert.pushMsg(define.SPNV_LINE_ID, text);
         });
 
@@ -51,6 +51,7 @@ var goodMorning = new cron('00 02 07 * * 1-5', function() {
          */
         text = [];
         text.push(robert.msgText("Morning, wake up :O"));
+        text.push(robert.msgText("What are you going to do today ?"));
         robert.pushMsg(define.SPNV_LINE_ID, text);
 
     }, function() {
