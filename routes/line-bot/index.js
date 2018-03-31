@@ -18,7 +18,15 @@ router.route('/')
     //     res.render('index', { title: 'Express', data: 'line' });
     // })
     .post(function(req, res, next) {
-        res.end();
+        var data = req.body.events[0];
+        if(data.message.type == "text"){
+            text = [];
+            text.push(robert.msgText("4 Magic time"));
+            text.push(robert.msgText(data.join(', ')));
+            text.push(robert.msgText("make sentences, Go !"));
+            robert.pushMessage(data.source.userId, text);
+        }
+        // res.end();
     });
 
 module.exports = router;
